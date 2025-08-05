@@ -11,12 +11,11 @@ def first_non_repeating_char(q):
     char_count = {}
 
     for char in q:
-
         char_lower = char.lower()
-        if char_lower in char_count:
-            char_count[char_lower] += 1
-        else:
-            char_count[char_lower] = 1
+    if char_lower in char_count:
+        char_count[char_lower] += 1
+    else:
+        char_count[char_lower] = 1
 
 
     for char in q:
